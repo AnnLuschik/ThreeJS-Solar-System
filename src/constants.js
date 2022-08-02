@@ -1,6 +1,7 @@
 export const sun = {
   size: 16, 
   texturePath: 'img/sun.jpeg',
+  rotation: 0.004,
 }
 
 export const planets = [
