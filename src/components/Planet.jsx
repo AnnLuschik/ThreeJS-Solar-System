@@ -11,12 +11,12 @@ export const Planet = ({size, position, rotation, texturePath, ring = ''}) => {
 
   useFrame(() => {
     anchorRef.current.rotateY(rotation.aroundSun);
-    planetRef.current.rotateY(rotation.self);
+    planetRef.current.rotateY(rotation.clockwise ? -rotation.self : rotation.self);
   });
 
   return (
     <object3D ref={anchorRef}>
-      <mesh position={[position, 0, 0]} ref={planetRef}>
+      <mesh position={[position, 0, 0]} rotation={[rotation.obliquity, 0, 0]} ref={planetRef}>
         <sphereGeometry args={[size, 30, 30]} attach="geometry" />
         <meshStandardMaterial map={texture} attach="material" />
         {ring && <Ring {...ring} />}
