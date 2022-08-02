@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ThreeJS-Solar-System/static/css/main.84a0e2f3.css",
+    "main.js": "/ThreeJS-Solar-System/static/js/main.366e16fd.js",
+    "static/js/787.8f8ca7d8.chunk.js": "/ThreeJS-Solar-System/static/js/787.8f8ca7d8.chunk.js",
+    "index.html": "/ThreeJS-Solar-System/index.html",
+    "main.84a0e2f3.css.map": "/ThreeJS-Solar-System/static/css/main.84a0e2f3.css.map",
+    "main.366e16fd.js.map": "/ThreeJS-Solar-System/static/js/main.366e16fd.js.map",
+    "787.8f8ca7d8.chunk.js.map": "/ThreeJS-Solar-System/static/js/787.8f8ca7d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84a0e2f3.css",
+    "static/js/main.366e16fd.js"
+  ]
+}
