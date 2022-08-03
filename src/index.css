@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,4 +21,51 @@ canvas {
   width: 100%;
   min-height: 100vh;
   background-color: black;
+}
+
+aside {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 20vw;
+  height: 100%;
+  z-index: 1;
+}
+
+.container {
+  padding: 0 1.5rem 1.5rem;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  border: 1px solid white;
+}
+
+.title {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 2.5rem;
+  color: white;
+  opacity: 0.5;
+  background: none;
+  border: none;
+  transition: all 0.2s;
+}
+
+button:hover {
+  opacity: 1;
 }

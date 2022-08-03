@@ -1,19 +1,20 @@
-import React from 'react';
-import {Canvas} from '@react-three/fiber';
-import {OrbitControls, Stars} from '@react-three/drei';
+import React, {createContext, useState} from 'react';
 
-import {SolarSystem} from './components/SolarSystem';
+import { Annotation } from './components/Annotation';
+import { Scene } from './components/Scene';
 
+export const DetallesContext = createContext();
 
 function App() {
+  const [data, setData] = useState({isVisible: false, detalles: null});
+
   return (
-    <Canvas camera={{fov: 45, near: 0.1, far: 1000, position: [-90, 140, 140]}}>
-      <OrbitControls />
-      <Stars radius={200} />
-      <ambientLight color={0x333333} />
-      <pointLight color={0xFFFFFF} intensity={2} distance={300} />
-      <SolarSystem />
-    </Canvas>
+    <>
+      <DetallesContext.Provider value={{data, setData}}>
+        <Annotation />
+        <Scene />
+      </DetallesContext.Provider>
+    </>
   );
 }
 
