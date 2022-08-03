@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/ThreeJS-Solar-System/static/css/main.84a0e2f3.css",
-    "main.js": "/ThreeJS-Solar-System/static/js/main.366e16fd.js",
+    "main.css": "/ThreeJS-Solar-System/static/css/main.e482b14c.css",
+    "main.js": "/ThreeJS-Solar-System/static/js/main.75d5b88f.js",
     "static/js/787.8f8ca7d8.chunk.js": "/ThreeJS-Solar-System/static/js/787.8f8ca7d8.chunk.js",
+    "static/media/sun.jpeg": "/ThreeJS-Solar-System/static/media/sun.b34e6ead10e18ad3ad77.jpeg",
+    "static/media/saturn-ring.png": "/ThreeJS-Solar-System/static/media/saturn-ring.bcc273749ba14b9a1a3c.png",
+    "static/media/uranus-ring.png": "/ThreeJS-Solar-System/static/media/uranus-ring.0c83eac82f5a812ff61c.png",
+    "static/media/pluto.jpeg": "/ThreeJS-Solar-System/static/media/pluto.d86feaab54257fcf668d.jpeg",
+    "static/media/mercury.jpeg": "/ThreeJS-Solar-System/static/media/mercury.00e79a1eabdbbce2ff8a.jpeg",
+    "static/media/jupiter.jpeg": "/ThreeJS-Solar-System/static/media/jupiter.f247fc590e02c428df8c.jpeg",
+    "static/media/earth.jpeg": "/ThreeJS-Solar-System/static/media/earth.b2752efb6072dea84967.jpeg",
+    "static/media/saturn.jpeg": "/ThreeJS-Solar-System/static/media/saturn.3995c1b1bfdfc4c07750.jpeg",
+    "static/media/neptune.jpeg": "/ThreeJS-Solar-System/static/media/neptune.bcbf9905e13eedfa7d26.jpeg",
     "index.html": "/ThreeJS-Solar-System/index.html",
-    "main.84a0e2f3.css.map": "/ThreeJS-Solar-System/static/css/main.84a0e2f3.css.map",
-    "main.366e16fd.js.map": "/ThreeJS-Solar-System/static/js/main.366e16fd.js.map",
+    "main.e482b14c.css.map": "/ThreeJS-Solar-System/static/css/main.e482b14c.css.map",
+    "main.75d5b88f.js.map": "/ThreeJS-Solar-System/static/js/main.75d5b88f.js.map",
     "787.8f8ca7d8.chunk.js.map": "/ThreeJS-Solar-System/static/js/787.8f8ca7d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84a0e2f3.css",
-    "static/js/main.366e16fd.js"
+    "static/css/main.e482b14c.css",
+    "static/js/main.75d5b88f.js"
   ]
 }
