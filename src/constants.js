@@ -33,7 +33,7 @@ export const planets = [
   {name: 'pluto', size: 2.8, position: 216, rotation: { self: 0.008, aroundSun: 0.00007, obliquity: 2.09}, texturePath: pluto},
 ];
 
-export const detalles  = {
+export const details  = {
   mercury: {
     name: "mercury",
     description: "The smallest planet and closest to the Sun.",

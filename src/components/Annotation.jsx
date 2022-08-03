@@ -1,24 +1,24 @@
 import React, {useContext} from 'react';
 import { MdClose } from "react-icons/md";
 
-import {DetallesContext} from '../App';
+import {DetailsContext} from '../App';
 
 export const Annotation = () => {
-  const {data: {isVisible, detalles}, setData} = useContext(DetallesContext);
+  const {data: {isVisible, details}, setData} = useContext(DetailsContext);
 
   return isVisible && (
     <aside>
       <div className="container">
-        <button type="button" onClick={() => setData({...detalles, isVisible: false})}>
+        <button type="button" onClick={() => setData({...details, isVisible: false})}>
           <MdClose />
         </button>
         <div className='title'>
-          <h2>{detalles.name}</h2>
+          <h2>{details.name}</h2>
         </div>
         <div className='description'>
-        <p>{detalles.description}</p>
-          {Number.isInteger(detalles.moons) && <p>Moons: {detalles.moons}</p>}
-          <p>Length of year: {detalles.yearLength} {detalles.yearLengthUnit}s</p>
+        <p>{details.description}</p>
+          {Number.isInteger(details.moons) && <p>Moons: {details.moons}</p>}
+          <p>Length of year: {details.yearLength} {details.yearLengthUnit}s</p>
         </div>
       </div>
     </aside>

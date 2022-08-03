@@ -3,17 +3,17 @@ import React, {createContext, useState} from 'react';
 import { Annotation } from './components/Annotation';
 import { Scene } from './components/Scene';
 
-export const DetallesContext = createContext();
+export const DetailsContext = createContext();
 
 function App() {
-  const [data, setData] = useState({isVisible: false, detalles: null});
+  const [data, setData] = useState({isVisible: false, details: null});
 
   return (
     <>
-      <DetallesContext.Provider value={{data, setData}}>
+      <DetailsContext.Provider value={{data, setData}}>
         <Annotation />
         <Scene />
-      </DetallesContext.Provider>
+      </DetailsContext.Provider>
     </>
   );
 }

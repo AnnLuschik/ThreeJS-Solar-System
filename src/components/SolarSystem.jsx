@@ -2,12 +2,12 @@ import {useRef, useContext} from 'react';
 import {useLoader, useFrame} from '@react-three/fiber';
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 
-import {DetallesContext} from '../App';
+import {DetailsContext} from '../App';
 import {Planet} from './Planet';
 import {sun, planets} from '../constants';
 
 export const SolarSystem = () => {
-  const {setData} = useContext(DetallesContext);
+  const {setData} = useContext(DetailsContext);
 
   const sunTexture = useLoader(TextureLoader, sun.texturePath);
 
@@ -19,7 +19,7 @@ export const SolarSystem = () => {
 
   return (
     <>
-    <mesh ref={sunObj} onClick={() => setData({isVisible: true, detalles: sun})}>
+    <mesh ref={sunObj} onClick={() => setData({isVisible: true, details: sun})}>
       <sphereGeometry args={[sun.size, 30, 30]} attach="geometry" />
       <meshBasicMaterial map={sunTexture} attach="material" />
     </mesh>
