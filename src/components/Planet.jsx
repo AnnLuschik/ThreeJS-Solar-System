@@ -1,9 +1,16 @@
-import {useRef}  from 'react';
+import {useRef, useContext}  from 'react';
 import * as THREE from 'three';
 import {useLoader, useFrame} from '@react-three/fiber';
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 
-export const Planet = ({size, position, rotation, texturePath, ring = ''}) => {
+import {DetallesContext} from '../App';
+import {detalles} from '../constants';
+
+export const Planet = ({ planetData }) => {
+  const {size, position, rotation, texturePath, ring, name} = planetData;
+
+  const {setData} = useContext(DetallesContext);
+
   const texture = useLoader(TextureLoader, texturePath);
 
   const planetRef = useRef();
@@ -16,7 +23,13 @@ export const Planet = ({size, position, rotation, texturePath, ring = ''}) => {
 
   return (
     <object3D ref={anchorRef}>
-      <mesh position={[position, 0, 0]} rotation={[rotation.obliquity, 0, 0]} ref={planetRef}>
+      <mesh 
+        ref={planetRef}
+        name={name}
+        position={[position, 0, 0]} 
+        rotation={[rotation.obliquity, 0, 0]} 
+        onClick={() => setData({isVisible: true, detalles: detalles[name]})}
+      >
         <sphereGeometry args={[size, 30, 30]} attach="geometry" />
         <meshStandardMaterial map={texture} attach="material" />
         {ring && <Ring {...ring} />}
